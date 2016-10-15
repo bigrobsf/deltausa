@@ -1,0 +1,46 @@
+
+
+Process Data File Help
+
+
+Results of processing:
+
+    The system reads the state, group number, number and amount of
+    claims processed, service fees, and withhold amounts from the
+    downloaded data sets.  The system separates this data based on
+    state.  Non-DDIC state data is written to PAY_USA.txt.  DDIC
+    data is written to DDIC_USA.txt.  Although DDIC_USA.txt is not
+    used for later processing, its totals can be added to PAY_USA.txt
+    to tie to the DeltaUSA reports.  PAY_USA.txt contains fees and
+    withhold amounts which must be remitted to other Delta plans.
+
+    The system then summarizes the data in PAY_USA.txt by processing
+    region and state to PAY_SUMM.txt.  The summarized file can be
+    imported into a spreadsheet referenced by another spreadsheet
+    file to automatically populate remittance advices.
+
+    Based on the groups listed in the ASO_LIST.txt file, the system
+    separates the data in the PAY_USA.txt file into RISK_USA.txt and
+    ASO_USA.txt.  The resulting report can be used to calculate admin.
+
+Instructions:
+
+1.  Select 'Process Mainframe Files' from the Main Menu.
+
+2.  Enter the beginning check date.  This is the same date
+    used to run the Easytreive data set creation jobs.  Dates
+    must be entered in format mm/dd/yyyy.
+
+3.  Enter the ending check date.  This is the same date
+    used to run the Easytreive data set creation jobs.  Dates
+    must be entered in format mm/dd/yyyy.
+
+4.  The system will verify the user entered dates against the
+    downloaded data files.  If both dates do not match the 
+    dates in all seven data files, the system will not process
+    the data.
+
+5.  If the dates do not match, check the dates on line 17 of
+    each of the Easytrieve jobs.  Re-run and download as needed.
+
+(Help File: dpdfhelp.txt)

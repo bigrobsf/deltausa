@@ -1,0 +1,29 @@
+
+     
+ASO Group List Maintenance Help
+
+
+Purpose of list:
+
+    Admin for DeltaUSA service fees is reported separately for
+    ASO and Risk groups.  The system will search the ASO List in
+    order to calculate service fees by group type (ASO or Risk).
+
+Instructions:
+
+1.  Select 'Maintain ASO Group List' option from the Main Menu.
+
+2.  To add a group, select 'Add New Group' from the ASO List Menu.
+    To delete a group, select 'Delete Group' from the menu.
+
+3.  The system will prompt you to enter a group number.  The
+    group number must be in the format xx-0yyyy or it will be
+    rejected.  'xx' is the two letter state abbreviation for a
+    DDIC state and 'yyyy' is the four digit group record number.
+    Sublocations do not need to be entered.
+
+4.  Verify that the system confirmed the addition or deletion
+    of the group.  You can print a report listing all ASO groups
+    in the system, in group number order, from the Report Menu.
+
+(Help File: dasohelp.txt)
